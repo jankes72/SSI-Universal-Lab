@@ -14,6 +14,21 @@ ASTER porównał wykonanie na tym samym komputerze MS-7A15. Dla każdego rozmiar
 
 Szersze porównanie jakości odpowiedzi tych adaptacji z oryginalnym Qwen pozostaje otwarte.
 
+## Atlas112 w warstwie 0 modelu 70B
+
+Czy warto przeznaczyć wyższą precyzję na konkretne fragmenty wag? W próbie R7 na CPU serwera MICRONET podnieśliśmy precyzję 112 z 448 kafli projekcji `up_proj` z Q8 do BF16. Atlas wskazał kafle na 10 prefiksach kalibracyjnych. Wybór zamroziliśmy przed testem na ośmiu nowych polskich zdaniach. Główny wynik obejmuje 20 różnych prefiksów, po jednokrotnym policzeniu wspólnych początków zdań.
+
+| Wariant `up_proj` | Średni względny błąd L2 | Mediana czasu przejścia MLP | Dane wag na przejście | Szczyt RSS procesu |
+|---|---:|---:|---:|---:|
+| Wszystkie kafle Q8 | 2,9225% | 2,1330 s | 677,25 MiB | 46,11 MiB |
+| 112 kafli BF16 według Atlasu | **2,3466%** | 2,1521 s | 732,81 MiB | 46,36 MiB |
+| 112 kafli BF16 z jednego losowania | 2,6580% | 2,1425 s | 732,81 MiB | 46,11 MiB |
+| Wszystkie kafle `up_proj` w BF16 | 1,8514% | 2,2983 s | 899,50 MiB | 45,86 MiB |
+
+Przy identycznej ilości danych wag Atlas uzyskał niższy błąd niż losowy wybór na **19 z 20 prefiksów**. W jednym przypadku wygrał wybór losowy. Przy podniesieniu precyzji jednej czwartej kafli Atlas zachował **53,76% redukcji średniego błędu**, jaką dało podniesienie precyzji całej projekcji. W każdej z czterech par zdań Atlas dokładniej od losowej kontroli odtworzył też wpływ zmiany kolejności słów na wektor wyjściowy.
+
+Błąd L2 mierzy odległość wyjścia MLP warstwy 0 od referencji BF16. Projekcje `gate_proj` i `down_proj` pracowały w Q8 we wszystkich wariantach. Czasy i RSS dotyczą badanego przejścia MLP. Powtarzalność względem kolejnych losowań, wpływ na generowane odpowiedzi i tempo całego modelu wymagają osobnych pomiarów. Źródłem liczb jest końcowy odczyt operatora z przebiegu `R7_ATLAS112_COMPLETE`.
+
 ## Co pokazały pozostałe próby?
 
 | Próba | Wynik i zakres | Źródło |
