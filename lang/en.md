@@ -16,7 +16,7 @@ MultiQuant Studio compares model quality, memory use and response time on a cust
 
 ## SSI CODEX
 
-SSI CODEX is a product in development for teams reviewing code changes and document revisions. A pilot tests whether the proposed decision follows your rule and whether the cited passage supports it. In the R5 Polish notes test, the local model found the value in 4 of 6 answerable questions. The number-and-name rule issued 8 citations, of which 3 supported the answer. [Product](../produkty/SSI-CODEX.md) · [Measurements](../badania/SSI-CODEX.md)
+SSI CODEX is a product in development for teams reviewing code changes and document revisions. A pilot tests whether the proposed decision follows your rule and whether the cited passage supports it. In the R5 Polish notes test, the local model found the value in 4 of 6 answerable questions. The number-and-name rule issued 8 citations, of which 3 supported the answer. In R6 the 3B model selected the correct sentence in all 6 answerable cases and detected missing information in 3 of 6. All three variants scored 9/12. [Product](../produkty/SSI-CODEX.md) · [Measurements](../badania/SSI-CODEX.md)
 
 ## Results
 

@@ -16,7 +16,7 @@ MultiQuant Studio compara calidad, memoria y tiempo de respuesta en el equipo de
 
 ## SSI CODEX
 
-SSI CODEX está en desarrollo para equipos que revisan cambios en código y documentación. El piloto comprueba si la decisión sigue la regla acordada y si el pasaje citado la respalda. En la prueba R5 con notas en polaco, el modelo local acertó el valor en 4 de las 6 preguntas que tenían respuesta. La regla que combina número y nombre ofreció 8 citas, de las que 3 respaldaban la respuesta. [Producto](../produkty/SSI-CODEX.md) · [Mediciones](../badania/SSI-CODEX.md)
+SSI CODEX está en desarrollo para equipos que revisan cambios en código y documentación. El piloto comprueba si la decisión sigue la regla acordada y si el pasaje citado la respalda. En la prueba R5 con notas en polaco, el modelo local acertó el valor en 4 de las 6 preguntas que tenían respuesta. La regla que combina número y nombre ofreció 8 citas, de las que 3 respaldaban la respuesta. En R6 el modelo 3B eligió la frase correcta en los 6 casos con respuesta y detectó la falta de información en 3 de los otros 6. Las tres variantes obtuvieron 9/12. [Producto](../produkty/SSI-CODEX.md) · [Mediciones](../badania/SSI-CODEX.md)
 
 ## Resultados
 

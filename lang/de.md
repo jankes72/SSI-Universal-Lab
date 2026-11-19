@@ -16,7 +16,7 @@ MultiQuant Studio vergleicht Qualität, Speicherbedarf und Antwortzeit verschied
 
 ## SSI CODEX
 
-SSI CODEX wird für Teams entwickelt, die Änderungen an Code und Dokumentation prüfen. Im Pilotprojekt prüfen wir, ob die Entscheidung Ihrer Regel entspricht und ob die zitierte Stelle sie belegt. Im R5-Test mit polnischen Notizen lieferte das lokale Modell bei 4 von 6 beantwortbaren Fragen den richtigen Wert. Die Regel zur Suche nach Zahl und Name lieferte 8 Belegstellen, von denen 3 die Antwort stützten. [Produkt](../produkty/SSI-CODEX.md) · [Messungen](../badania/SSI-CODEX.md)
+SSI CODEX wird für Teams entwickelt, die Änderungen an Code und Dokumentation prüfen. Im Pilotprojekt prüfen wir, ob die Entscheidung Ihrer Regel entspricht und ob die zitierte Stelle sie belegt. Im R5-Test mit polnischen Notizen lieferte das lokale Modell bei 4 von 6 beantwortbaren Fragen den richtigen Wert. Die Regel zur Suche nach Zahl und Name lieferte 8 Belegstellen, von denen 3 die Antwort stützten. In R6 erkannte das 3B-Modell bei allen 6 beantwortbaren Fragen den richtigen Satz und bei 3 von 6 weiteren Fragen die fehlende Information. Alle drei Varianten erreichten 9/12. [Produkt](../produkty/SSI-CODEX.md) · [Messungen](../badania/SSI-CODEX.md)
 
 ## Messergebnisse
 

@@ -46,6 +46,6 @@ Błąd L2 mierzy odległość wyjścia MLP warstwy 0 od referencji BF16. Projekc
 
 ## SSI CODEX · nowy pomiar na polskich notatkach
 
-W próbie R5 model SSI 0,5B poprawnie odczytał liczbę w 4 z 6 pytań z odpowiedzią. Reguła łącząca liczbę z nazwą wydała 8 cytatów, z których 3 uzasadniały odpowiedź. Raport pokazuje także wyniki kontroli, przypadki braku danych i porównanie rewizji o ustalonym schemacie. [Badania SSI CODEX](SSI-CODEX.md) · [Produkt i pilotaż](../produkty/SSI-CODEX.md)
+W próbie R5 model SSI 0,5B poprawnie odczytał liczbę w 4 z 6 pytań z odpowiedzią. Reguła łącząca liczbę z nazwą wydała 8 cytatów, z których 3 uzasadniały odpowiedź. W R6 model 3B uzyskał 9/12 we wszystkich wariantach. Każdy poprawnie wskazał źródło w 6/6 i rozpoznał brak informacji w 3/6. Raport pokazuje także wyniki kontroli, przypadki braku danych i porównanie rewizji o ustalonym schemacie. [Badania SSI CODEX](SSI-CODEX.md) · [Produkt i pilotaż](../produkty/SSI-CODEX.md)
 
 [Zobacz, jak dobieramy zakres pilotażu](../uslugi/Pilotaze.md) · [Wróć do katalogu](../README.md)

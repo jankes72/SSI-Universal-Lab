@@ -16,7 +16,7 @@ MultiQuant Studio compare la qualité, la mémoire et le temps de réponse de pl
 
 ## SSI CODEX
 
-SSI CODEX est en développement pour les équipes qui vérifient les modifications du code et de la documentation. Le pilote évalue si la décision suit votre règle et si le passage cité la justifie. Lors du test R5 sur des notes en polonais, le modèle local a trouvé la valeur dans 4 des 6 questions auxquelles le texte permettait de répondre. La règle associant nombre et nom a produit 8 citations, dont 3 justifiaient la réponse. [Produit](../produkty/SSI-CODEX.md) · [Mesures](../badania/SSI-CODEX.md)
+SSI CODEX est en développement pour les équipes qui vérifient les modifications du code et de la documentation. Le pilote évalue si la décision suit votre règle et si le passage cité la justifie. Lors du test R5 sur des notes en polonais, le modèle local a trouvé la valeur dans 4 des 6 questions auxquelles le texte permettait de répondre. La règle associant nombre et nom a produit 8 citations, dont 3 justifiaient la réponse. Dans R6, le modèle 3B a choisi la bonne phrase dans les 6 cas où la réponse figurait dans le texte et reconnu son absence dans 3 des 6 autres. Les trois variantes ont obtenu 9/12. [Produit](../produkty/SSI-CODEX.md) · [Mesures](../badania/SSI-CODEX.md)
 
 ## Résultats
 

@@ -34,6 +34,33 @@ W notatce 16 osób **wysiadło** na przystanku Rumianek. Na pytanie o liczbę os
 | HOLDOUT12 · osobny panel 12 zadań | Model 3B samodzielnie i z pustą kartą osiągnął po 11/12. Z surową propozycją 0,5B uzyskał 10/12. |
 | FIELDS12 · rekordy o ustalonym schemacie | Reguła porównująca pola bezpośrednio z wejścia rozstrzygnęła 12/12. Model 3B z pustą kartą oraz z kartą pól od 0,5B uzyskał po 7/12. Z polami odczytanymi regułą uzyskał 8/12. |
 
-R6 sprawdza wybór zdania źródłowego przez Qwen2.5-Coder 3B w trzech wariantach. Wariant bazowy otrzymuje notatkę i pytanie. Dwa kolejne dodają pole z propozycją liczbową, puste lub wypełnione wynikiem SSI 0,5B. Według operatora pomiar jest w toku. Ostatnim zakończonym etapem tej serii w chwili publikacji jest R5.
+## R6 · czy propozycja SSI 0,5B pomaga modelowi 3B wybrać źródło?
+
+Na tych samych sześciu notatkach co w R5 Qwen2.5-Coder 3B miał wskazać numer zdania lub odpowiedzieć „0”, gdy notatka nie zawierała odpowiedzi. Każdy z 12 przypadków przeszedł przez trzy warianty, łącznie 36 wywołań. Klucz odpowiedzi służył do oceny po zakończeniu generacji.
+
+| Co otrzymał model 3B | Poprawne źródło / 6 | Rozpoznany brak / 6 | Fałszywe źródło przy braku / 6 | Wynik / 12 | Obie odpowiedzi poprawne / 6 par | Łączny czas wywołań 3B |
+|---|---:|---:|---:|---:|---:|---:|
+| BASE · notatka i pytanie | 6 | 3 | 3 | 9 | 3 | 196,075 s |
+| EMPTY · dodatkowa instrukcja i pusta karta | 6 | 3 | 3 | 9 | 3 | 209,195 s |
+| B · ta sama instrukcja i liczba z SSI 0,5B | 6 | 3 | 3 | 9 | 3 | 221,308 s |
+
+Wszystkie 36 odpowiedzi miało poprawny format. Karta zmieniła dwa rozstrzygnięcia wobec EMPTY. W H_04 model z kartą słusznie wstrzymał wskazanie źródła o stołach przewidzianych w projekcie. W H_10 karta spowodowała fałszywe wskazanie zdania o zleconych odbitkach. Bilans wyniósł jedno trafienie więcej i jedno mniej. W tym panelu karta nie zwiększyła łącznej trafności. Próba dotyczy wyboru zdania w sześciu znanych notatkach.
+
+**Warunki R6.** Qwen2.5-Coder 3B Instruct, Q4_K_M, dwa wątki CPU, temperatura 0, seed 42, kontekst 2048, limit odpowiedzi 32 tokeny, `keep_alive=0`. Kolejność wariantów była zrównoważona. Czasy obejmują wywołania modelu 3B wraz z ładowaniem. Wartości 0,5B pochodziły z R5. Weryfikację wykonano na 36 rekordach z dziennika operatora, sprawdzając kolejność, odciski poleceń i odpowiedzi oraz odtwarzając wynik programem R6.
+
+| Przypadek | Klucz | BASE | EMPTY | B |
+|---|---:|---:|---:|---:|
+| H_01 | 1 | 1 | 1 | 1 |
+| H_02 | 0 | 2 | 3 | 3 |
+| H_03 | 2 | 2 | 2 | 2 |
+| H_04 | 0 | 1 | 1 | 0 |
+| H_05 | 1 | 1 | 1 | 1 |
+| H_06 | 0 | 2 | 1 | 1 |
+| H_07 | 3 | 3 | 3 | 3 |
+| H_08 | 0 | 0 | 0 | 0 |
+| H_09 | 3 | 3 | 3 | 3 |
+| H_10 | 0 | 0 | 0 | 3 |
+| H_11 | 2 | 2 | 2 | 2 |
+| H_12 | 0 | 0 | 0 | 0 |
 
 [Karta SSI CODEX i kontakt w sprawie pilotażu](../produkty/SSI-CODEX.md) · [Pozostałe wyniki Kolektywu](Wyniki.md)
