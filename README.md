@@ -1,2 +1,23 @@
-# SSI-Universal-Lab
-Produkty, usługi badawczo-rozwojowe, narzędzia i wyniki Kolektywu SSI. Publiczny katalog SSI Universal Lab.
+# SSI Universal Lab
+
+Polski · [English](lang/en.md) · [Deutsch](lang/de.md) · [Español](lang/es.md) · [Français](lang/fr.md)
+
+Rozwijamy lokalne modele językowe i sprawdzamy, które zadania potrafią wykonać na sprzęcie dostępnym klientowi. W Universal Lab można porozmawiać z SSI Advisor, poznać wyniki Kolektywu i zgłosić własny przypadek do pilotażu. [Otwórz Universal Lab](https://ssi.chaos.re/)
+
+## Co chcesz zrobić?
+
+| Potrzeba | Co rozwijamy | Gdzie przeczytać więcej |
+|---|---|---|
+| Chcę wiedzieć, co dzieje się na moim serwerze i jak ludzie oraz systemy AI znajdują ofertę firmy. | HERCULES łączy diagnostykę usług, obserwację ruchu robotów i badanie widoczności strony. Plecak gromadzi zatwierdzone opisy produktów, a Labirynt służy do odizolowanych prób. | [SSI HERCULES](produkty/HERCULES.md) |
+| Chcę zadawać pytania o dokumenty firmy i sprawdzać, skąd pochodzi odpowiedź. | Private AI ma wyszukiwać właściwe fragmenty, przytaczać źródła i przestrzegać uprawnień osoby pytającej. | [SSI Private AI](produkty/Private-AI.md) |
+| Mam ograniczony RAM lub sprzęt bez GPU. Chcę wiedzieć, jaki model sobie poradzi. | MultiQuant Studio służy do porównywania wariantów modelu pod względem jakości, czasu i pamięci na wskazanym sprzęcie. | [SSI MultiQuant Studio](produkty/MultiQuant-Studio.md) |
+| Mam własny model i chcę sprawdzić, czy modyfikacja SSI Nano pomoże w konkretnym zadaniu. | W ramach pilotażu ustalamy próbę bazową i kryteria oceny. Wyniki badań Nano obejmują także przypadki, w których prostsza metoda wypadła lepiej. | [Usługi R&D](uslugi/Pilotaze.md) |
+| Chcę porozmawiać o współpracy, poprosić o dostęp lub umówić spotkanie. | SSI Advisor pomaga znaleźć temat i przygotować zgłoszenie. Termin i zakres potwierdza operator. | [SSI Advisor i Universal Lab](narzedzia/Universal-Lab.md) |
+
+Trzy produkty są **w rozwoju**. Publicznie dostępne są rozmowa z SSI Advisor, formularz kontaktowy i opisane niżej wyniki. [Kierunki produktowe w SSI V5](https://github.com/jankes72/SSI_V5/blob/8ab81c767eac6c6356667546be95e8d4cf506a3f/README.md?plain=1#L16-L20)
+
+## Co już zmierzyliśmy?
+
+Przy generowaniu tych samych 128 tokenów na CPU wariant 3B skrócił medianę czasu z 256,53 do 80,66 s. Prototyp Plecaka i Labiryntu Herkulesa zaliczył 110 ze 110 lokalnych testów aplikacji. Każdy wynik ma własny punkt odniesienia i zakres próby. [Wyniki Kolektywu](badania/Wyniki.md)
+
+[O SSI i architekturze](https://ssi.chaos.re/dyrektor/o-ssi) · [Zgłoś temat do rozmowy](https://ssi.chaos.re/#contact)
