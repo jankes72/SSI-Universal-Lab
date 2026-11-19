@@ -15,7 +15,7 @@ Rozwijamy lokalne modele językowe i sprawdzamy, które zadania potrafią wykona
 | Chcę porozmawiać o współpracy, poprosić o dostęp lub umówić spotkanie. | SSI Advisor pomaga znaleźć temat i przygotować zgłoszenie. Termin i zakres potwierdza operator. | [SSI Advisor i Universal Lab](narzedzia/Universal-Lab.md) |
 | Chcę sprawdzić zmianę w kodzie lub porównać dwie rewizje dokumentacji. | SSI CODEX przygotowuje propozycję do przeglądu. W pilotażu mierzymy zgodność z regułą, trafność źródła i rozpoznawanie braków. | [SSI CODEX](produkty/SSI-CODEX.md) |
 
-Cztery produkty są **w rozwoju**. Publicznie dostępne są rozmowa z SSI Advisor, formularz kontaktowy i opisane niżej wyniki. [Kierunki produktowe w SSI V5](https://github.com/jankes72/SSI_V5/blob/8ab81c767eac6c6356667546be95e8d4cf506a3f/README.md?plain=1#L16-L20)
+Cztery produkty są **w rozwoju**. Publicznie dostępne są rozmowa z SSI Advisor, formularz kontaktowy i opisane niżej wyniki. [Kierunki produktowe w SSI V5](https://github.com/jankes72/SSI_V5/blob/3cb98382de3753c3b13981b5de9e7fd690e43736/README.md?plain=1#L16-L23)
 
 ## Co już zmierzyliśmy?
 

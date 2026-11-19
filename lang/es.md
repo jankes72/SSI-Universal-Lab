@@ -20,7 +20,7 @@ SSI CODEX está en desarrollo para equipos que revisan cambios en código y docu
 
 ## Resultados
 
-En una prueba de CPU con una sola instrucción, la mediana para generar los mismos 128 tokens con el modelo 3B bajó de 256,53 a 80,66 segundos. Se compararon dos motores SSI con los mismos pesos. [Resultados](https://ssi.chaos.re/#exp-cpu3) · [SSI V5](https://github.com/jankes72/SSI_V5/blob/8ab81c767eac6c6356667546be95e8d4cf506a3f/README.md?plain=1#L16-L20)
+En una prueba de CPU con una sola instrucción, la mediana para generar los mismos 128 tokens con el modelo 3B bajó de 256,53 a 80,66 segundos. Se compararon dos motores SSI con los mismos pesos. [Resultados](https://ssi.chaos.re/#exp-cpu3) · [SSI V5](https://github.com/jankes72/SSI_V5/blob/3cb98382de3753c3b13981b5de9e7fd690e43736/README.md?plain=1#L16-L23)
 
 ## SSI Advisor
 

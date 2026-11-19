@@ -20,7 +20,7 @@ SSI CODEX wird für Teams entwickelt, die Änderungen an Code und Dokumentation 
 
 ## Messergebnisse
 
-Bei einem CPU-Test mit einer Eingabe sank die mediane Zeit für dieselben 128 Ausgabetoken beim 3B-Modell von 256,53 auf 80,66 Sekunden. Verglichen wurden zwei SSI-Laufzeitvarianten mit denselben Modellgewichten. [Messergebnisse](https://ssi.chaos.re/#exp-cpu3) · [SSI V5](https://github.com/jankes72/SSI_V5/blob/8ab81c767eac6c6356667546be95e8d4cf506a3f/README.md?plain=1#L16-L20)
+Bei einem CPU-Test mit einer Eingabe sank die mediane Zeit für dieselben 128 Ausgabetoken beim 3B-Modell von 256,53 auf 80,66 Sekunden. Verglichen wurden zwei SSI-Laufzeitvarianten mit denselben Modellgewichten. [Messergebnisse](https://ssi.chaos.re/#exp-cpu3) · [SSI V5](https://github.com/jankes72/SSI_V5/blob/3cb98382de3753c3b13981b5de9e7fd690e43736/README.md?plain=1#L16-L23)
 
 ## SSI Advisor
 

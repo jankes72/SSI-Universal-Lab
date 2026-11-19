@@ -20,7 +20,7 @@ SSI CODEX is a product in development for teams reviewing code changes and docum
 
 ## Results
 
-In a single-prompt CPU benchmark, the SSI 3B engine reduced median generation time for the same 128 tokens from 256.53 to 80.66 seconds. This compares two SSI engines using the same model weights. [Results](https://ssi.chaos.re/#exp-cpu3) · [SSI V5](https://github.com/jankes72/SSI_V5/blob/8ab81c767eac6c6356667546be95e8d4cf506a3f/README.md?plain=1#L16-L20)
+In a single-prompt CPU benchmark, the SSI 3B engine reduced median generation time for the same 128 tokens from 256.53 to 80.66 seconds. This compares two SSI engines using the same model weights. [Results](https://ssi.chaos.re/#exp-cpu3) · [SSI V5](https://github.com/jankes72/SSI_V5/blob/3cb98382de3753c3b13981b5de9e7fd690e43736/README.md?plain=1#L16-L23)
 
 ## SSI Advisor
 
