@@ -13,8 +13,9 @@ Rozwijamy lokalne modele językowe i sprawdzamy, które zadania potrafią wykona
 | Mam ograniczony RAM lub sprzęt bez GPU. Chcę wiedzieć, jaki model sobie poradzi. | MultiQuant Studio służy do porównywania wariantów modelu pod względem jakości, czasu i pamięci na wskazanym sprzęcie. | [SSI MultiQuant Studio](produkty/MultiQuant-Studio.md) |
 | Mam własny model i chcę sprawdzić, czy modyfikacja SSI Nano pomoże w konkretnym zadaniu. | W ramach pilotażu ustalamy próbę bazową i kryteria oceny. Wyniki badań Nano obejmują także przypadki, w których prostsza metoda wypadła lepiej. | [Usługi R&D](uslugi/Pilotaze.md) |
 | Chcę porozmawiać o współpracy, poprosić o dostęp lub umówić spotkanie. | SSI Advisor pomaga znaleźć temat i przygotować zgłoszenie. Termin i zakres potwierdza operator. | [SSI Advisor i Universal Lab](narzedzia/Universal-Lab.md) |
+| Chcę sprawdzić zmianę w kodzie lub porównać dwie rewizje dokumentacji. | SSI CODEX przygotowuje propozycję do przeglądu. W pilotażu mierzymy zgodność z regułą, trafność źródła i rozpoznawanie braków. | [SSI CODEX](produkty/SSI-CODEX.md) |
 
-Trzy produkty są **w rozwoju**. Publicznie dostępne są rozmowa z SSI Advisor, formularz kontaktowy i opisane niżej wyniki. [Kierunki produktowe w SSI V5](https://github.com/jankes72/SSI_V5/blob/8ab81c767eac6c6356667546be95e8d4cf506a3f/README.md?plain=1#L16-L20)
+Cztery produkty są **w rozwoju**. Publicznie dostępne są rozmowa z SSI Advisor, formularz kontaktowy i opisane niżej wyniki. [Kierunki produktowe w SSI V5](https://github.com/jankes72/SSI_V5/blob/8ab81c767eac6c6356667546be95e8d4cf506a3f/README.md?plain=1#L16-L20)
 
 ## Co już zmierzyliśmy?
 

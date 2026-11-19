@@ -1,6 +1,6 @@
 # SSI Universal Lab · Products and R&D
 
-SSI is developing three products. Choose a topic below for a detailed project description in Polish.
+SSI is developing four products. Choose a topic below for a detailed project description in Polish.
 
 ## SSI HERCULES
 
@@ -13,6 +13,10 @@ Private AI aims to answer questions from company documents, cite the relevant pa
 ## SSI MultiQuant Studio
 
 MultiQuant Studio compares model quality, memory use and response time on a customer's hardware. R&D pilots can include quantization or SSI Nano adaptations. [SSI MultiQuant Studio](../produkty/MultiQuant-Studio.md)
+
+## SSI CODEX
+
+SSI CODEX is a product in development for teams reviewing code changes and document revisions. A pilot tests whether the proposed decision follows your rule and whether the cited passage supports it. In the R5 Polish notes test, the local model found the value in 4 of 6 answerable questions. The number-and-name rule issued 8 citations, of which 3 supported the answer. [Product](../produkty/SSI-CODEX.md) · [Measurements](../badania/SSI-CODEX.md)
 
 ## Results
 

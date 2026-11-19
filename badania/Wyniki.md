@@ -1,6 +1,6 @@
 # Wyniki Kolektywu SSI
 
-Stan zestawienia na 19 listopada 2026 r. Każda liczba odnosi się do określonego zadania. Porównanie silników tej samej adaptacji, test aplikacji i porównanie z oryginalnym modelem bazowym odpowiadają na różne pytania.
+Stan zestawienia na 20 listopada 2026 r. Każda liczba odnosi się do określonego zadania. Porównanie silników tej samej adaptacji, test aplikacji i porównanie z oryginalnym modelem bazowym odpowiadają na różne pytania.
 
 ## Jak zmienił się czas generacji na CPU?
 
@@ -43,5 +43,9 @@ Błąd L2 mierzy odległość wyjścia MLP warstwy 0 od referencji BF16. Projekc
 | SPLOT, dobór tematu Nano-Comm | Na dwóch pytaniach porównanie bez kart i z kartami dało po 0/2. W osobnej serii model skopiował 10/10 etykiet, dobrał rolę w 0/10 i rozpoznał znaczenie w 2/10. | [Wynik Nano-Comm](https://ssi.chaos.re/#exp-nano) |
 | MultiQuant, oryginalne wagi 70B na CPU | W osobnej, wznawianej próbie silnik SSI wykonał 80 warstw BF16. Dla jednego pytania odtworzył odpowiedź „4” i oba tokeny referencji GPU. Pełny czas i szczyt RAM pozostają nieustalone. | [Próba 70B BF16](https://ssi.chaos.re/#exp-bfstream) |
 | Herkules, Plecak i Labirynt | 110/110 lokalnych testów funkcjonalnych i regresyjnych aplikacji. Wpływ na pozycje strony lub cytowania marki w odpowiedziach AI wymaga pomiaru w pilotażu. | [Wynik prototypu](https://ssi.chaos.re/#exp-hercules) |
+
+## SSI CODEX · nowy pomiar na polskich notatkach
+
+W próbie R5 model SSI 0,5B poprawnie odczytał liczbę w 4 z 6 pytań z odpowiedzią. Reguła łącząca liczbę z nazwą wydała 8 cytatów, z których 3 uzasadniały odpowiedź. Raport pokazuje także wyniki kontroli, przypadki braku danych i porównanie rewizji o ustalonym schemacie. [Badania SSI CODEX](SSI-CODEX.md) · [Produkt i pilotaż](../produkty/SSI-CODEX.md)
 
 [Zobacz, jak dobieramy zakres pilotażu](../uslugi/Pilotaze.md) · [Wróć do katalogu](../README.md)

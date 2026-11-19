@@ -1,6 +1,6 @@
 # SSI Universal Lab · Produkte und Forschung
 
-SSI entwickelt drei Produkte. Die verlinkten Projektbeschreibungen sind auf Polnisch.
+SSI entwickelt vier Produkte. Die verlinkten Projektbeschreibungen sind auf Polnisch.
 
 ## SSI HERCULES
 
@@ -13,6 +13,10 @@ Private AI soll Fragen anhand von Firmendokumenten beantworten, die passende Tex
 ## SSI MultiQuant Studio
 
 MultiQuant Studio vergleicht Qualität, Speicherbedarf und Antwortzeit verschiedener Modellvarianten auf der Hardware des Kunden. Pilotprojekte können Quantisierung und Anpassungen mit SSI Nano umfassen. [SSI MultiQuant Studio](../produkty/MultiQuant-Studio.md)
+
+## SSI CODEX
+
+SSI CODEX wird für Teams entwickelt, die Änderungen an Code und Dokumentation prüfen. Im Pilotprojekt prüfen wir, ob die Entscheidung Ihrer Regel entspricht und ob die zitierte Stelle sie belegt. Im R5-Test mit polnischen Notizen lieferte das lokale Modell bei 4 von 6 beantwortbaren Fragen den richtigen Wert. Die Regel zur Suche nach Zahl und Name lieferte 8 Belegstellen, von denen 3 die Antwort stützten. [Produkt](../produkty/SSI-CODEX.md) · [Messungen](../badania/SSI-CODEX.md)
 
 ## Messergebnisse
 
