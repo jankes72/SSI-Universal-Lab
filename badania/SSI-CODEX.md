@@ -2,6 +2,24 @@
 
 Stan publikacji na 20 listopada 2026 r. Kolektyw SSI bada, kiedy lokalny model może przygotować propozycję do przeglądu i jak sprawdzić jej uzasadnienie. Poniżej podajemy zarówno trafienia, jak i fałszywe wskazania źródła.
 
+## Cel 20-godzinnego badania SSI CODEX
+
+20 listopada 2026 r. o 02:05 czasu polskiego Kolektyw SSI uruchomił badanie lokalnego Qwen2.5-Coder 3B na jednym serwerze CPU. Chcemy ustalić, w których zadaniach dodatkowa wskazówka, co sprawdzić przed odpowiedzią, pomaga modelowi i ile czasu kosztuje. Wcześniejsza próba R6 pokazała, dlaczego to istotne. Model znalazł źródło dla 6 z 6 faktów obecnych w notatkach, ale w 3 z 6 pytań bez odpowiedzi wskazał zdanie, które jej nie potwierdzało.
+
+| Zadanie | Co uznajemy za trafienie |
+|---|---|
+| Źródło w polskiej notatce | Wskazanie zdania o właściwym obiekcie i czynności albo odpowiedź „BRAK”, gdy tekst nie potwierdza faktu. |
+| Porównanie rewizji | Rozpoznanie zmiany, zgodności lub braku pola potrzebnego do rozstrzygnięcia. |
+| Przegląd kodu | Dopuszczenie albo zatrzymanie fragmentu zgodnie z podaną regułą. |
+| Czytanie Pythona | Podanie listy, którą wypisze program, również dla pustego wycinka i ujemnego kroku. |
+| Pisanie krótkiego kodu | Utworzenie wyrażenia arytmetycznego, które daje oczekiwane wartości dla dziewięciu par argumentów. |
+
+Przez pierwsze **16 godzin** CODEX porównuje odpowiedź bezpośrednią z odpowiedzią po dodatkowej instrukcji sprawdzenia. Dla każdego rodzaju zadań wybiera strategię z większą liczbą trafień na ukończonych parach. Przy remisie wybiera odpowiedź bezpośrednią. Wagi modelu są stałe. Przez ostatnie **4 godziny** wybór jest zamrożony. Model bazowy i CODEX dostają te same nowe zadania syntetyczne po polsku. Obliczenia odbywają się w infrastrukturze SSI, bez płatnych API i RunPoda.
+
+Raport pokaże dla każdego zadania liczebność próby, trafność obu wariantów, odpowiedzi poprawione i pogorszone, błędy formatu oraz medianę czasu odpowiedzi. Osobno policzymy fałszywe wskazania źródła przy braku faktu. Na tej podstawie chcemy wybrać zadania do pilotażu i określić, gdzie potrzebna jest kontrola człowieka lub sprawdzenie regułą.
+
+**Stan przy ogłoszeniu.** Odczyt z serwera potwierdził pracę nad pierwszą odpowiedzią bazową. Liczba ukończonych par wynosiła wtedy zero. Planowany koniec okna przypada 20 listopada o 22:05 czasu polskiego.
+
 ## Polski tekst · od wartości do dowodu
 
 | Próba | Co zmierzyliśmy |
