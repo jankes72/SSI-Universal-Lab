@@ -17,6 +17,10 @@ Rozwijamy lokalne modele językowe i sprawdzamy, które zadania potrafią wykona
 
 Cztery produkty są **w rozwoju**. Publicznie dostępne są rozmowa z SSI Advisor, formularz kontaktowy i opisane niżej wyniki. [Kierunki produktowe w SSI V5](https://github.com/jankes72/SSI_V5/blob/3cb98382de3753c3b13981b5de9e7fd690e43736/README.md?plain=1#L16-L23)
 
+## SSI CODEX · co sprawdzamy przez 20 godzin?
+
+Czy CODEX potrafi wskazać zdanie potwierdzające odpowiedź i zauważyć, że w notatce brakuje szukanego faktu? 20 listopada uruchomiliśmy na jednym serwerze SSI próbę obejmującą także przegląd kodu, porównanie rewizji, odczytywanie wyników Pythona i pisanie krótkich wyrażeń. Przez 16 godzin CODEX dobiera sposób odpowiedzi. Ostatnie 4 godziny służą porównaniu go z modelem bazowym na nowych zadaniach. Chcemy zmierzyć zarówno poprawione odpowiedzi, jak i nowe błędy oraz czas potrzebny na dodatkowe sprawdzenie. [Opis badania i stan przy starcie](badania/SSI-CODEX.md#cel-20-godzinnego-badania-ssi-codex)
+
 ## Co już zmierzyliśmy?
 
 Przy generowaniu tych samych 128 tokenów na CPU wariant 3B skrócił medianę czasu z 256,53 do 80,66 s. Prototyp Plecaka i Labiryntu Herkulesa zaliczył 110 ze 110 lokalnych testów aplikacji. Każdy wynik ma własny punkt odniesienia i zakres próby. [Wyniki Kolektywu](badania/Wyniki.md)
