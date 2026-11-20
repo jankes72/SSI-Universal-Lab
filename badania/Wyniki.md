@@ -48,4 +48,8 @@ Błąd L2 mierzy odległość wyjścia MLP warstwy 0 od referencji BF16. Projekc
 
 W próbie R5 model SSI 0,5B poprawnie odczytał liczbę w 4 z 6 pytań z odpowiedzią. Reguła łącząca liczbę z nazwą wydała 8 cytatów, z których 3 uzasadniały odpowiedź. W R6 model 3B uzyskał 9/12 we wszystkich wariantach. Każdy poprawnie wskazał źródło w 6/6 i rozpoznał brak informacji w 3/6. Raport pokazuje także wyniki kontroli, przypadki braku danych i porównanie rewizji o ustalonym schemacie. [Badania SSI CODEX](SSI-CODEX.md) · [Produkt i pilotaż](../produkty/SSI-CODEX.md)
 
+## SSI Nano-Brain i wybór kompetencji Pocket
+
+Model 0,5B na CPU miał rozpoznać, kiedy można użyć jednej z dwóch funkcji do pracy z nazwami, a kiedy żadna nie pasuje. W próbie z pytaniem „tak czy nie” model potwierdził wszystkie 24 polecenia. W osobnym porównaniu na tych samych poleceniach zmodyfikowany klasyfikator rozpoznał 7 z 8 właściwych próśb i błędnie zaakceptował 5 z 16 pozostałych. [Wyniki i przykłady błędów](SSI-Nano-Brain.md)
+
 [Zobacz, jak dobieramy zakres pilotażu](../uslugi/Pilotaze.md) · [Wróć do katalogu](../README.md)

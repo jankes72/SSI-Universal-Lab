@@ -21,4 +21,6 @@ Cztery produkty są **w rozwoju**. Publicznie dostępne są rozmowa z SSI Adviso
 
 Przy generowaniu tych samych 128 tokenów na CPU wariant 3B skrócił medianę czasu z 256,53 do 80,66 s. Prototyp Plecaka i Labiryntu Herkulesa zaliczył 110 ze 110 lokalnych testów aplikacji. Każdy wynik ma własny punkt odniesienia i zakres próby. [Wyniki Kolektywu](badania/Wyniki.md)
 
+Sprawdziliśmy też, kiedy mały model potrafi dobrać gotową funkcję do polecenia. Próby obejmowały wybór między dwiema kompetencjami oraz sytuacje, w których żadna nie pasowała. [SSI Nano-Brain i biblioteka Pocket](badania/SSI-Nano-Brain.md)
+
 [O SSI i architekturze](https://ssi.chaos.re/dyrektor/o-ssi) · [Zgłoś temat do rozmowy](https://ssi.chaos.re/#contact)
