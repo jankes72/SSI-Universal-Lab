@@ -1,0 +1,20 @@
+/* SSI HERKULES public module R1. */
+:root{color-scheme:dark;--bg:#0b1115;--panel:#121c22;--line:#26353d;--text:#e8f0f2;--muted:#a9bac0;--accent:#66e0c2;--warn:#ffd27d}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at 75% -20%,#143b3a 0,transparent 45%),var(--bg);color:var(--text);font:16px/1.65 system-ui,sans-serif}
+main{max-width:1000px;margin:auto;padding:24px clamp(18px,4vw,52px) 72px}
+nav{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding:8px 0 18px;margin-bottom:56px}
+nav a,.links a{color:var(--accent);text-decoration:none}
+.eyebrow{color:var(--accent);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+h1{max-width:850px;font-size:clamp(2.3rem,6vw,4.6rem);line-height:1.04;margin:.45em 0}
+h2{font-size:1.55rem;line-height:1.2;margin:0 0 14px}
+p{max-width:78ch}
+.lead{font-size:1.18rem;color:#d2e0e3;max-width:72ch}
+.status{display:inline-flex;border:1px solid #725e32;border-radius:999px;padding:5px 12px;color:var(--warn);font-size:.85rem;font-weight:650}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:32px 0}
+article,section.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}
+section{margin:28px 0}
+.muted{color:var(--muted)}
+.links{display:flex;flex-wrap:wrap;gap:18px;margin-top:36px}
+footer{border-top:1px solid var(--line);margin-top:52px;padding-top:20px;color:var(--muted);font-size:.9rem}
+:focus-visible{outline:3px solid var(--warn);outline-offset:3px;border-radius:4px}
