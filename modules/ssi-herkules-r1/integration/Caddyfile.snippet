@@ -1,0 +1,7 @@
+# Insert inside the existing ssi.chaos.re site block before its catch-all handler.
+# Static root on host: /var/www/ssi-herkules
+@herkules_public path /herkules /herkules/* /robots.txt /sitemap-herkules.xml /llms.txt
+handle @herkules_public {
+    root * /var/www/ssi-herkules
+    file_server
+}
