@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SSI HERKULES — Labirynt i widoczność serwisów</title>
+<meta name="description" content="Herkules rozwija diagnostykę usług SSI, bezpieczny Labirynt dla automatycznego ruchu oraz pomiar widoczności zatwierdzonych treści w wyszukiwarkach i odpowiedziach AI.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ssi.chaos.re/herkules/">
+<link rel="stylesheet" href="/herkules/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "SSI HERKULES — Labirynt i widoczność serwisów",
+  "description": "Publiczny opis rozwijanego modułu SSI HERKULES. Rozdziela wyniki lokalnego prototypu od stanu wdrożenia hostowego.",
+  "url": "https://ssi.chaos.re/herkules/",
+  "inLanguage": "pl-PL",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "SSI Universal Lab",
+    "url": "https://ssi.chaos.re/"
+  }
+}
+</script>
+</head>
+<body>
+<main>
+<nav aria-label="Nawigacja SSI">
+<a href="https://ssi.chaos.re/">SSI Universal Lab</a>
+<span class="eyebrow">SSI HERKULES</span>
+</nav>
+<header>
+<p class="eyebrow">Bezpieczeństwo · Labirynt · widoczność</p>
+<h1>SSI HERKULES</h1>
+<p class="lead">Herkules rozwija narzędzia do diagnostyki usług, bezpiecznego badania automatycznego ruchu oraz sprawdzania, czy zatwierdzone informacje o ofercie są odnajdywane w wyszukiwarkach i odpowiedziach AI.</p>
+<p><span class="status">Produkt w rozwoju · wdrożenie hostowe niepotwierdzone</span></p>
+</header>
+<div class="grid" aria-label="Zakres modułu">
+<article><p class="eyebrow">01 · Straż</p><h2>Diagnostyka usług</h2><p>Planowany Guard ma zbierać ograniczone pomiary stanu usług i przedstawiać operatorowi dowody oraz kontekst. Zmiany wymagają osobnego uprawnienia i zatwierdzenia.</p></article>
+<article><p class="eyebrow">02 · Labirynt</p><h2>Odizolowane próby</h2><p>Labirynt służy do badania zachowania automatycznego ruchu w symulacji z atrapami. Ruch nie powinien uzyskiwać dostępu do prawdziwych danych ani systemów.</p></article>
+<article><p class="eyebrow">03 · Plecak</p><h2>Zatwierdzona wiedza</h2><p>Plecak Herkulesa porządkuje publiczne fakty o produktach. Człowiek i crawler powinni otrzymywać te same zatwierdzone informacje i odnośniki do źródeł.</p></article>
+<article><p class="eyebrow">04 · Widoczność</p><h2>Pomiar, nie obietnica</h2><p>Widoczność w Google i odpowiedziach AI wymaga osobnych pomiarów. Samo pobranie strony przez bota nie dowodzi pozycji, kliknięć ani cytowania.</p></article>
+</div>
+<section class="card" id="labirynt">
+<p class="eyebrow">Jak działa Labirynt</p><h2>Kontrolowane środowisko dla automatycznego ruchu</h2>
+<p>Labirynt ma kierować dozwolony ruch wyłącznie do publicznych zasobów i odizolowanych atrap. Klatki są odrębnymi granicami izolacji hostowej. Sama nazwa User-Agent — na przykład „Googlebot” lub nazwa asystenta AI — nie potwierdza tożsamości odwiedzającego, ponieważ nagłówek można podrobić.</p>
+<p>Analiza próbek wymagająca ich aktywnego uruchomienia należy do osobnego, mocniej izolowanego Bąbla R&amp;D. Zwykła klatka Labiryntu nie jest automatycznie sandboxem do uruchamiania złośliwego kodu.</p>
+</section>
+<section class="card" id="architektura">
+<p class="eyebrow">Docelowy kierunek</p><h2>Centrala i cztery granice izolacji</h2>
+<p>Założenie właścicielskie z 20 listopada 2026 r. przewiduje centralę Herkulesa na nowym DIRECTORZE oraz cztery niezależne klatki — po jednej na każdym z czterech serwerów SSI. To opis celu architektury, nie potwierdzenie, że klatki są już zainstalowane lub działają.</p>
+<p>Historyczny prototyp R3 opisywał 48 logicznych punktów oraz lokalną serię 110/110 testów funkcjonalnych i regresyjnych. Te wyniki nie oznaczają 48 fizycznych serwerów ani odbioru produkcyjnego.</p>
+</section>
+<section class="card" id="stan">
+<p class="eyebrow">Stan dowodów</p><h2>Co potwierdzają dostępne wyniki</h2>
+<ul>
+<li><strong>Źródło i prototyp lokalny:</strong> opisano symulację oraz lokalne testy.</li>
+<li><strong>Wdrożenie VPS:</strong> wymaga osobnego odczytu usług, kontenerów, routingu i izolacji na hostach.</li>
+<li><strong>Widoczność SEO/AISEO:</strong> pozostaje nieudowodniona bez pomiarów i okresu porównawczego.</li>
+<li><strong>Ruch publiczny:</strong> nie należy kierować do prywatnych API, sekretów ani prawdziwych danych.</li>
+</ul>
+<p class="muted">Źródła publiczne opisują rozwój produktu. Nie stanowią raportu z niezależnego audytu hosta ani deklaracji ochrony 24/7.</p>
+</section>
+<section class="card" id="dla-crawlerow">
+<p class="eyebrow">Dla crawlerów i asystentów</p><h2>Jedna wersja zatwierdzonych faktów</h2>
+<p>Ta strona jest przygotowana jako czytelny dokument HTML z nagłówkami, opisem i danymi strukturalnymi. Wdrożenie powinno udostępniać ją anonimowo pod stałym adresem. Pliki robots.txt, sitemap i llms.txt są wskazówkami dla crawlerów — nie zastępują kontroli dostępu.</p>
+</section>
+<div class="links">
+<a href="https://github.com/jankes72/SSI-Universal-Lab/blob/main/produkty/HERCULES.md">Opis produktu w SSI Universal Lab</a>
+<a href="https://github.com/jankes72/SSI-Communications/pull/186">Źródłowy Labirynt R3 — PR #186</a>
+<a href="https://ssi.chaos.re/">Przejdź do Universal Lab</a>
+</div>
+<footer><p>SSI HERKULES · treść R1 · aktualizacja 27 listopada 2026. Status produktu i wdrożenia należy aktualizować wyłącznie na podstawie nowych, sprawdzalnych dowodów.</p></footer>
+</main>
+</body>
+</html>
