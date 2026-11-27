@@ -1,0 +1,16 @@
+# SSI HERKULES
+
+> SSI HERKULES is a product in development for service diagnostics, isolated automated-traffic experiments, approved product knowledge, and measured search/AI visibility.
+
+- Public page: https://ssi.chaos.re/herkules/
+- Product description: https://github.com/jankes72/SSI-Universal-Lab/blob/main/produkty/HERCULES.md
+- Universal Lab: https://ssi.chaos.re/
+
+## Verified scope
+
+- The R3 Labyrinth prototype described 48 logical points; these are not 48 physical servers.
+- The reported 110/110 result covers local prototype functional/regression tests, not a production VPS deployment.
+- The owner target recorded 2026-11-20 is one central Director and four separate host-isolated cages. This target does not attest that they are installed or live.
+- SEO/AI answer visibility requires measurement. A crawler fetch or User-Agent string does not prove search ranking, AI citation, or crawler identity.
+- Labyrinth traffic must remain within allowed public resources and isolated decoys. A normal cage is not a malware execution sandbox.
+- No 24/7 production protection or production GO is claimed.
