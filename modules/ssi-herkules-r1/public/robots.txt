@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /herkules/
+Disallow: /api/
+Disallow: /panel
+Disallow: /conference/
+
+Sitemap: https://ssi.chaos.re/sitemap-herkules.xml
